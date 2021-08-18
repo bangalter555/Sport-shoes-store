@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/fb5fc5f301.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Shoes footwear</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_btn"><i class="fas fa-bars"></i></div>
+      <div class="logo">
+        <i class="fas fa-shoe-prints"></i>
+        <h2 class="title">SPORT SHOES</h2>
+        <h4 class="second-title">FIND THE RIGHT FIT FOR YOU</h4>
+      </div>
+      <div class="contact"><i class="fas fa-phone"></i></div>
+    </header>
+
+    <section class="carousel">
+      <button class="carousel_btn carousel_btn--left is-hidden">
+        <img src="images\chevron-left-solid.svg" alt="#" />
+      </button>
+      <div class="carousel_track-container">
+        <ul class="carousel_track">
+          <li class="carousel_slide current-slide">
+            <img class="carousel_img" src="images\model one.jpg" alt="#" />
+          </li>
+          <li class="carousel_slide">
+            <img class="carousel_img" src="images\model two.jpg" alt="#" />
+          </li>
+          <li class="carousel_slide">
+            <img class="carousel_img" src="images\model three.jpg" alt="#" />
+          </li>
+          <li class="carousel_slide">
+            <img class="carousel_img" src="images\model four.jpg" alt="#" />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel_btn carousel_btn--right">
+        <img src="images\chevron-right-solid.svg" alt="#" />
+      </button>
+
+      <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button
+        ><button class="carousel_indicator"></button
+        ><button class="carousel_indicator"></button
+        ><button class="carousel_indicator"></button>
+      </div>
+    </section>
+
+    <script src="js/carousel.js"></script>
+  </body>
+</html>

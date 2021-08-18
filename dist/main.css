@@ -1,0 +1,254 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 22%;
+  background-color: black;
+  color: white;
+  font-family: "Georama", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header i {
+  font-size: 1.8rem;
+}
+
+.menu_btn,
+.contact {
+  padding: 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.menu_btn {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.contact {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.logo .title {
+  font-size: 2.5rem;
+}
+.logo .second-title {
+  font-size: 1rem;
+}
+
+@-webkit-keyframes show-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carousel {
+  width: 100%;
+  height: 78%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-animation: show-up 500ms ease-in forwards;
+  animation: show-up 500ms ease-in forwards;
+}
+
+.carousel_img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+/*HAMBURGER MENU & CONTACT BUTTON*/
+.menu_btn,
+.contact {
+  width: 5%;
+  height: 100%;
+}
+
+/*CAROUSEL BUTTONS*/
+.carousel_track-container {
+  background-color: white;
+  height: 95%;
+  width: 70%;
+  overflow: hidden;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  list-style-type: none;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  -o-transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.carousel_slide {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.carousel_btn {
+  top: 50%;
+  width: 15%;
+  height: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.carousel_btn img {
+  width: 10%;
+  height: 10%;
+}
+
+.carousel_nav {
+  width: 30%;
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.carousel_indicator {
+  border: none;
+  border-radius: 50%;
+  background-color: #c5c9ca;
+  width: 3.1%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+  background-color: black;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 50%;
+  }
+
+  .carousel_track-container {
+    height: 85%;
+  }
+
+  .carousel_nav {
+    height: 15%;
+  }
+
+  .carousel_img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .carousel_indicator {
+    height: 15%;
+  }
+
+  .menu_btn,
+.contact {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
